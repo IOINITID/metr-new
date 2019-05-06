@@ -1,0 +1,83 @@
+.projects-wrapper {
+
+  .projects-block-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 400px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &:hover a span {
+      opacity: 1;
+      transform: translateY(-60px);
+      transition: 0.5s ease-in-out;
+    }
+
+    a span {
+      color: #ffffff;
+      text-align: center;
+      opacity: 0;
+      text-decoration: none;
+      transform: translateY(0);
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+
+      &:hover~div {
+        filter: brightness(0.5) blur(1px);
+        transition: 0.5s ease-in-out;
+      }
+    }
+
+    .project-block {
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project-one-background {
+      background-image: url("../img/project-image-one.png");
+    }
+
+    .project-two-background {
+      background-image: url("../img/project-image-two.png");
+    }
+
+    .project-three-background {
+      background-image: url("../img/project-image-three.png");
+    }
+
+    .project-four-background {
+      background-image: url("../img/project-image-four.png");
+    }
+
+    .project-five-background {
+      background-image: url("../img/project-image-five.png");
+    }
+
+    .project-six-background {
+      background-image: url("../img/project-image-six.png");
+    }
+  }
+}

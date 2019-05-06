@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template" client="site">
+<name>metr</name>
+<creationDate>01.034.2019</creationDate>
+<author>JinMedia</author>
+<authorEmail>help-line@inbox.ru</authorEmail>
+<authorUrl>web-elitit.ru</authorUrl>
+<copyright>Copyright 2019 JinMedia</copyright>
+<license>GNU General Public License</license>
+<version>1.0.0</version>
+<description>metr</description>
+<files>
+<folder>css</folder>
+<folder>img</folder>
+<folder>fonts</folder>
+<filename>index.php</filename>
+<filename>templateDetails.xml</filename>
+</files>
+<positions>
+<position>slider-wrapper</position>
+</positions>
+</extension>

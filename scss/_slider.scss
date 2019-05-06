@@ -1,0 +1,35 @@
+.slider-wrapper {
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+.slick-dots {
+  bottom: 25px;
+}
+.slick-slider {
+  margin-bottom: 0 !important;
+}
+.slick-active {
+  button {
+    &::before {
+      font-size: 12px !important;
+      line-height: 22px !important;
+      background-color: #ffffff;
+      border-radius: 50%;
+      opacity: 1 !important;
+    }
+  }
+}
+.slick-dots {
+  li {
+    button {
+      &::before {
+        background-color: #ffffff;
+        border-radius: 50%;
+        opacity: 1;
+        color: transparent;
+      }
+    }
+  }
+}

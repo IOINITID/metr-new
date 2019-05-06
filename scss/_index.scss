@@ -1,0 +1,127 @@
+.about-me-info-wrapper {
+  // padding-top: 111px;
+
+  @include media-breakpoint-down(lg) {
+    // padding-top: 30px;
+  }
+
+  .about-me-info-one {
+    margin-right: auto;
+
+    img {
+      min-width: 100%;
+      object-fit: contain;
+
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      max-width: 100%;
+      margin: 0 auto;
+      padding-bottom: 30px;
+    }
+  }
+
+  .about-me-info-two {
+    p {
+      width: 600px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #000000;
+      font-family: "Montserrat", sans-serif;
+
+      &:nth-child(1) {
+        width: 410px;
+        font-family: "Times New Roman PS - Italic MT";
+        margin-left: auto;
+        font-style: italic;
+
+        @include media-breakpoint-down(lg) {
+          padding-bottom: 20px;
+        }
+
+        @include media-breakpoint-down(sm) {
+          width: auto;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: auto;
+      }
+    }
+
+    h2 {
+      width: 600px;
+      color: #000000;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+
+      @include media-breakpoint-down(sm) {
+        width: auto;
+      }
+    }
+
+    ul {
+      li {
+        width: 600px;
+        color: #000000;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+
+        &::before {
+          content: "●";
+          padding-right: 5px;
+        }
+
+        @include media-breakpoint-down(sm) {
+          width: auto;
+        }
+      }
+    }
+
+
+
+  }
+}
+
+.instagram-media-wrapper {
+
+  img {
+    width: 100%;
+  }
+
+  .instagram-link {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+
+    img {
+      padding-right: 5px;
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+
+    a {
+      color: #000000;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+
+  .instagram-images-row {
+    .instagram-image-wrapper {
+      padding-bottom: 30px;
+    }
+  }
+}

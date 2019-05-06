@@ -1,0 +1,79 @@
+@import "../scss/reset";
+@import "../scss/bootstrap";
+@import "../slick/slick";
+@import "../slick/slick-theme";
+@import "header";
+@import "slider";
+@import "index";
+@import "projects";
+@import "project";
+@import "services";
+@import "contacts";
+@import "footer";
+@import "popup";
+
+@font-face {
+  font-family: "Times New Roman PS - Italic MT";
+  src: url("/fonts/timesnewromanps-italicmt.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Cyr - Roman";
+  src: url("/fonts/HelveticaRegular.ttf") format("ttf");
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.cl-wh {
+  color: #ffffff;
+}
+
+.cl-bk {
+  color: #000000;
+}
+
+.td-n {
+  text-decoration: none;
+}
+
+.lh-24 {
+  line-height: 24px;
+}
+
+main {
+  padding: 100px 0;
+
+  @include media-breakpoint-down(lg) {
+    padding: 50px 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+  }
+}

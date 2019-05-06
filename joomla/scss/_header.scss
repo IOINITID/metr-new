@@ -1,0 +1,116 @@
+.header-wrapper {
+  border-bottom: 1px solid #dedede;
+  padding: 10px 0;
+
+  .header-row {
+    justify-content: space-between;
+    align-items: center;
+
+    .header-social-buttons-wrapper {
+      a {
+        &:nth-child(1) {
+          padding-right: 17px;
+        }
+      }
+
+      @include media-breakpoint-down(lg) {
+        order: -2;
+      }
+
+      @include media-breakpoint-down(md) {
+        order: -1;
+      }
+
+      @include media-breakpoint-down(sm) {
+        text-align: center;
+      }
+    }
+
+    .header-main-logo-wrapper {
+      margin-left: auto;
+      text-align: center;
+
+      @include media-breakpoint-down(lg) {
+        margin-left: 0;
+        display: flex;
+      }
+
+      @include media-breakpoint-down(md) {
+        order: -2;
+        justify-content: center;
+      }
+    }
+
+    .header-mail-wrapper {
+      a {
+        color: #2b2b2b;
+        @extend .fs-14,
+        .fw-400;
+      }
+
+      @include media-breakpoint-down(lg) {
+        display: block;
+        text-align: center;
+        order: -1;
+      }
+    }
+
+    .header-tel-wrapper {
+      a {
+        @extend .fs-16,
+        .fw-400,
+        .cl-wh,
+        .td-n;
+        padding: 10px 25px;
+        border-radius: 30px;
+        background-color: #000000;
+        border: 2px solid #000000;
+
+        @include media-breakpoint-down(sm) {
+          padding: 10px;
+          font-size: 14px !important;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: #ffffff;
+          @extend .cl-bk;
+          transition: 0.25s ease-in-out;
+          border: 2px solid #000000;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.header-menu-list {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 0;
+
+    li {
+      width: 100%;
+
+      a {
+        display: block;
+        text-align: center;
+        padding: 24px 0;
+        border-bottom: 4px solid transparent;
+        @extend .fs-16,
+        .fw-700,
+        .cl-bk,
+        .td-n;
+
+        &:hover {
+          border-bottom: 4px solid #000000;
+        }
+      }
+    }
+  }
+}
